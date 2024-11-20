@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<link href="assets/img/logo.png" rel="icon">
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Sidebar Menu</title>
+</head>
+
+<body class="das-bg">
+
+    
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Lover Match.</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Membership</a></li>
+          <li><a class="startdating-btn" href="register.html">Start Dating Today</a></li>
+          <li class="dropdown"><a href="login.html"><img class="img-box" src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image"><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Wallet:₹00.00</a></li>
+                <!-- <li><a href="user-dashboard.html">Profile</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Settings</a></li> -->
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+              </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <div class="user_dash_wrapper">
+    <div class="sidebar">
+      <button class="toggle-btn" onclick="toggleSidebar()">⮜</button>
+      <ul class="menu">
+        <li><a href="user-dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+        <li><a href="dwallet.html"><i class="fas fa-wallet"></i><span>Recharge wallet</span></a></li>
+        <li><a href="verify_payment.html" ><i class="fas fa-search-dollar"></i><span>Payment verify</span></a></li>
+        <li><a href="loved_ones.html"><i class="far fa-heart"></i><span>loved Once</span></a></li>
+        <li><a href="privacy__card.html"><i class="fas fa-id-card"></i><span>Privacy card</span></a></li>
+      </ul>
+    </div>
+    <div class="content-udasboard">
+        <div class="profile_details recharge_wallet_wrrap">
+          <h3>Scan and Pay</h3>
+          <p>Note: Payment will be auto credited to your wallet within 4hours</p>
+          <div class="bar_code">
+    
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V6I6pGdusfpIl9fcrt0hi13AEhgBnijsqQ&s" alt="">
+            
+          </div>
+
+          <div class="upiid">UPI IDs:lovermatch143@ybl</div>
+
+          <a href="verify_payment.html">Click here </a> to verify your payment.
+
+
+        </div>
+
+
+      
+    </div>
+  </div>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                <div class="widget">
+                    <h3 class="sitename">LOVER MATCH.</h3>
+                    <p class="mb-4">
+                        There live the blind texts. Separated they live in Bookmarksgrove
+                        right at the coast of the Semantics, a large language ocean.
+                    </p>
+                    <p class="mb-0">
+                        <a href="register.html" class="btn-learn-more">Learn more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 ps-lg-5 mb-3 mb-md-0">
+                <div class="widget">
+                    <h3 class="widget-heading">Follow US</h3>
+                    <ul class="list-unstyled float-start me-5">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html">Find Love</a></li>
+                        <li><a href="portfolio-details.html">Our Couples</a></li>
+                      </ul>
+                      <ul class="list-unstyled float-start">
+                        <li><a href="index.html">Loved & Be loved</a></li>
+                        <li><a href="services.html">Membership</a></li>
+                        <li><a href="login.html">Contact Us</a></li>
+                      </ul>
+                </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 pl-lg-5">
+                <div class="widget">
+                    <h3 class="widget-heading">Connect</h3>
+                    <ul class="list-unstyled social-icons light mb-3">
+                        <li>
+                            <a href="#"><span class="bi bi-facebook"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="bi bi-twitter-x"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="bi bi-linkedin"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="bi bi-google"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="bi bi-google-play"></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <div class="footer-subscribe">
+                        <h3 class="widget-heading">Newsletter</h3>
+                        <form action="forms/newsletter.php" method="post" class="php-email-form">
+                            <div class="mb-2">
+                                <input type="text" class="form-control" name="email" placeholder="Enter your email">
+
+                                <button type="submit" class="btn btn-link">
+                                    <span class="bi bi-arrow-right"></span>
+                                </button>
+                            </div>
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">
+                                Your subscription request has been sent. Thank you!
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Lover Match.</strong> <span>All Rights
+                    Reserved</span></p>
+        </div>
+    </div>
+</footer>
+  <script>
+    function toggleSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const toggleBtn = document.querySelector(".toggle-btn");
+
+  sidebar.classList.toggle("collapsed");
+
+  // Update the toggle button arrow direction
+  if (sidebar.classList.contains("collapsed")) {
+    toggleBtn.innerHTML = "⮞"; // Point right when closed
+  } else {
+    toggleBtn.innerHTML = "⮜"; // Point left when open
+  }
+}
+
+  </script>
+  </body>
+
+  </html>
