@@ -440,6 +440,9 @@ a.startdating-btn:hover{
   width: 80px;
   height: 80px;
 }
+.header {
+  padding: 10px 0;
+}
 }
 
 /*--------------------------------------------------------------
@@ -2977,6 +2980,11 @@ section.verification-form h2 {
     font-size: 28px;
 }
 
+.content-udasboard {
+  max-width: 100%;
+  padding: 10px;
+}
+
 .user_dash_wrapper {
   .sidebar {
     width: 100%;
@@ -2996,6 +3004,7 @@ section.verification-form h2 {
   padding-top: 0px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 
